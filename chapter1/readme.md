@@ -39,3 +39,56 @@ process 是nodejs提供的能力， 如何理解？
 
 这确实很方便。
 
+
+nodejs 记住const 和 let就好
+
+```js
+// 1. const - 常量（不能重新赋值）
+const API_KEY = "sk-xxx";
+API_KEY = "new-key";  // ❌ 错误：不能修改
+
+// 2. let - 变量（可以重新赋值）
+let count = 1;
+count = 2;  // ✅ 允许修改
+
+```
+
+## async语法糖
+```js
+// 方式1：async
+async function add(a, b) {
+  return a + b;
+}
+
+// 方式2：手动返回 Promise
+function add(a, b) {
+  return Promise.resolve(a + b);
+}
+```
+
+
+```js
+nodejs 的流式输出特别方便
+for await (const chunk of response)
+```
+
+```python
+from openai import OpenAI
+
+client = OpenAI()
+
+# 流式输出
+stream = client.chat.completions.create(
+    model="gpt-4",
+    messages=[{"role": "user", "content": "你好"}],
+    stream=True
+)
+
+# Python 用 for 循环迭代
+for chunk in stream:
+    content = chunk.choices[0].delta.content
+    if content:
+        print(content, end="", flush=True)  # end="" 防止换行，flush=True 立即输出
+
+print()  # 最后换行
+```
