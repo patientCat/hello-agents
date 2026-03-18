@@ -1,0 +1,14 @@
+{
+  "name": "hello-agents",
+  "version": "1.0.0",
+  "description": "从零开始构建Agent框架",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "openai": "^4.20.0",
+    "dotenv": "^16.3.1"
+  }
+}
