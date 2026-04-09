@@ -1,1 +1,5 @@
 node_modules
+
+# Sources: clone 的开源项目，仅本地学习用
+sources/*
+!sources/README.md
