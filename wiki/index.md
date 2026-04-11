@@ -17,6 +17,7 @@
 | [LLM 流式输出与 SSE](concepts/streaming-and-sse.md) | active | 从自回归生成到 SSE 分块传输，解释为何可实时增量输出 |
 | [Agent 通信协议](concepts/agent-protocols.md) | draft | MCP / A2A / ANP 协议原理 |
 | [Agentic-RL](concepts/agentic-rl.md) | draft | 从 SFT 到 GRPO 的 Agent 强化学习训练 |
+| [TCP/IP 四层与 OSI 七层](concepts/network-layers-and-tcp.md) | active | 网络分层模型、交换机/路由器、TCP 握手与挥手、Nginx 的 L4/L7 角色 |
 
 ## 导航
 

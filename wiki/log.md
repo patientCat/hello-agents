@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-04-11
+
+### Ingest: TCP/IP 四层与 OSI 七层
+
+- 新增页面：`wiki/concepts/network-layers-and-tcp.md`
+- 梳理 TCP/IP 四层与 OSI 七层的映射，明确 5/6/7 层在工程中的合并
+- 总结交换机 vs 路由器、TCP 握手与 3/4 次挥手、TIME_WAIT 的作用，以及 Nginx 在 L4/L7 的位置
+- 更新索引：`wiki/index.md` 新增“TCP/IP 四层与 OSI 七层”概念页入口
+
 ## 2026-04-10
 
 ### Ingest: LLM 流式输出与 SSE
